@@ -1,0 +1,34 @@
+<template>
+    <div>
+        <h2>Enter Name to Search Patien</h2>
+        <lightning-input 
+        type="text" 
+        id="input1"
+        value={patientName} 
+        onchange={handleOnChangePatientName}>
+        </lightning-input>
+
+        <h2>Enter Email to Search Patient</h2>
+        <lightning-input 
+        type="text" 
+        id="input2"
+        value={patientEmail} 
+        onchange={handleOnChangePatientEmail}>
+        </lightning-input>
+
+
+        <lightning-button variant="brand"
+        label="Search Patient"
+        title="Click here to initiate the search"
+        onclick={initiateSearch}>
+        </lightning-button>
+
+        <lightning-button variant="brand"
+        label="Clear Search"
+        title="Click here to Clear Seach Results"
+        onclick={clearSearch}>
+        </lightning-button>
+
+    </div>
+    
+</template>
